@@ -1,0 +1,29 @@
+{
+  "name": "node-restify-include",
+  "version": "0.1.0",
+  "description": "API include functionality middleware",
+  "main": "lib/include.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozinc/node-restify-include.git"
+  },
+  "keywords": [
+    "restify",
+    "api",
+    "include"
+  ],
+  "author": "Jónatan Óskar Nilsson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ozinc/node-restify-include/issues"
+  },
+  "homepage": "https://github.com/ozinc/node-restify-include",
+  "dependencies": {
+    "bluebird": "^2.3.2",
+    "lodash": "^2.4.1",
+    "restify": "^2.8.2"
+  }
+}
