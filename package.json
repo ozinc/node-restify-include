@@ -1,5 +1,5 @@
 {
-  "name": "node-restify-include",
+  "name": "restify-include",
   "version": "0.2.0",
   "description": "API include functionality middleware",
   "main": "lib/include.js",
