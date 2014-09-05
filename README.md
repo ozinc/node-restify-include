@@ -1,9 +1,9 @@
 node-restify-include
 ====================
 
-Simple middleware for restify (probably compatible with many other libraries as well) that adds the include query behavior to json api.
+Simple middleware for restify (probably compatible with many other libraries as well) that adds the include query behavior to your API.
 
-Let's say a random API request to http://api.something.com/api/cars/123 has the following schema:
+Let's say a random API request to http://api.something.com/api/cars/123 has the following data:
 
 ```javascript
 {
@@ -32,17 +32,17 @@ Now with the include middleware, you can do http://api.something.com/api/cars/12
 How it works
 ------------
 
-The middleware listens to the query parameter 'include'. Any name specified is then searched in the response (1 layer down). If there is a property in any of the objects found that has name + '_url' in it, it will request that data.
+The middleware checks for the query parameter `include`. If a url for the field(s) specified in the `include` parameter exists in the response object (`<fieldName>_url`), a request to that url is made and the results embeded in the response. 
 
 Install
 -------
 
 ```javascript
-var includes = require('node-restify-include');
+var include = require('node-restify-include');
 
 // create server here
 
-server.use(includes()); //Add the middleware
+server.use(include()); //Add the middleware
 ```
 
 Configuration
@@ -52,7 +52,7 @@ The middleware defaults includes the `authorization` header from the original re
 
 ```javascript
 //Make the middleware forward the following headers from the original request.
-server.use(includes({
+server.use(include({
   headers: ['authorization', 'user-agent', 'x-request-id']
 }));
 ```
