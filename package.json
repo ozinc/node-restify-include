@@ -29,5 +29,17 @@
     "bluebird": "^2.3.2",
     "lodash": "^2.4.1",
     "restify-errors": "^2.6.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gulp": "~3.7.0",
+    "gulp-clean": "~0.3.0",
+    "gulp-coverage": "~0.1.24",
+    "gulp-jshint": "~1.6.3",
+    "gulp-mocha": "~0.4.1",
+    "jshint-stylish": "~0.2.0",
+    "mocha": "~1.13.0",
+    "run-sequence": "~0.3.6",
+    "sinon": "^1.10.3"
   }
 }
