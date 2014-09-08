@@ -28,6 +28,7 @@
   "dependencies": {
     "bluebird": "^2.3.2",
     "lodash": "^2.4.1",
+    "request": "^2.42.0",
     "restify-errors": "^2.6.1"
   },
   "devDependencies": {
